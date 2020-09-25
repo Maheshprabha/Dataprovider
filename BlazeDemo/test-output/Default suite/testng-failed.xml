@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.blazedemo.pageactions.SignupPageAction">
+      <class name="com.atmecs.blazedemo.testscript.SignupTest">
         <methods>
-          <include name="signUp"/>
-          <include name="signupDetails"/>
+          <include name="invokeBrowser"/>
+          <include name="signup"/>
         </methods>
-      </class> <!-- com.atmecs.blazedemo.pageactions.SignupPageAction -->
+      </class> <!-- com.atmecs.blazedemo.testscript.SignupTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -20,10 +20,10 @@ public class LoginPageAction {
     
     CommonHelpers.clickAction(driver, property.getProperty("loc_login"));
     //enter user mail id 
-    CommonHelpers.sendText(driver, property.getProperty("loc_username"), property.getProperty("user_mailid"));
+    CommonHelpers.sendText(driver, property.getProperty("loc_username"), ("loginusername"));
     
     //enter user password
-    CommonHelpers.sendText(driver, property.getProperty("loc_password"), property.getProperty("user_password"));
+    CommonHelpers.sendText(driver, property.getProperty("loc_password"), ("loginpassword"));
     
     //click submit button
     CommonHelpers.clickAction(driver,  property.getProperty("loc_submitbutton"));

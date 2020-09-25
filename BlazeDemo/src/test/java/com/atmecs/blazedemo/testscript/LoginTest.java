@@ -1,14 +1,27 @@
 package com.atmecs.blazedemo.testscript;
 
 
+import java.io.IOException;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
 import com.atmecs.blazedemo.baseclass.BaseClass;
+import com.atmecs.blazedemo.excel.UtilsTest;
 import com.atmecs.blazedemo.pageactions.LoginPageAction;
 
 
 public class LoginTest extends BaseClass {
-	LoginPageAction login = new LoginPageAction();
-	public void LoginDetails() throws Exception{
-		login.loginDetails();
+	@DataProvider(name="data")
+	public Object[][] getDetails() throws IOException {
+		Object data[][] = UtilsTest.excel("login");
+		return data;
+	}
+	@Test(dataProvider="userdata")
+
+	public void LoginDetails(String loginusername , String loginpassword) throws Exception{
+		LoginPageAction login = new LoginPageAction();
+        login.loginDetails();
 	}
 	
 	}
