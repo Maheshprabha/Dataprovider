@@ -12,7 +12,7 @@ import com.atmecs.blazedemo.pageactions.LoginPageAction;
 
 
 public class LoginTest extends BaseClass {
-	@DataProvider(name="data")
+	@DataProvider(name="userdata")
 	public Object[][] getDetails() throws IOException {
 		Object data[][] = UtilsTest.excel("login");
 		return data;
@@ -21,7 +21,7 @@ public class LoginTest extends BaseClass {
 
 	public void LoginDetails(String loginusername , String loginpassword) throws Exception{
 		LoginPageAction login = new LoginPageAction();
-        login.loginDetails();
+        login.loginDetails(loginusername,loginpassword);
 	}
 	
 	}

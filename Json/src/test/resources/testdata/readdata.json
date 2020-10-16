@@ -1,0 +1,16 @@
+[
+    {
+        "employee": {
+            "employeeName": "Mahesh",
+            "employeeDesignation": "Associate software engineer",
+            "employeeSalary": "30000"
+        }
+    },
+    {
+        "employee": {
+            "employeeName": "Ranjitha",
+            "employeeDesignation": "Associate software engineer",
+            "employeeSalary": "20000"
+        }
+    }
+]

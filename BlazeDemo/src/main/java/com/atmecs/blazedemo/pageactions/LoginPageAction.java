@@ -13,9 +13,9 @@ public class LoginPageAction {
 	ReaderLocation read = new ReaderLocation();
 	WebDriver driver;
 
-	public void loginDetails() throws Exception {
+	public void loginDetails(String loginusername , String loginpassword ) throws Exception {
 		property = ReaderLocation.readLocation(FilePath.locator_path);
-		property = ReaderLocation.readLocation(FilePath.User_path);
+		//property = ReaderLocation.readLocation(FilePath.User_path);
 
     
     CommonHelpers.clickAction(driver, property.getProperty("loc_login"));

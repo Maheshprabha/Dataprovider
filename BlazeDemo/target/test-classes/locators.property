@@ -5,7 +5,7 @@ loc_password = //input[@id='loginpassword']
 loc_submitbutton = //button[text()='Log in']
 
 // xpath for signup
-loc_signupusername = //a[@id='signin2']
+loc_signupusername = //input[@id='sign-username']
 loc_signupusernames = //input[@id='sign-username']
 loc_password = //input[@id='sign-password']
 loc_signupbutton = //button[text()='Sign up']
